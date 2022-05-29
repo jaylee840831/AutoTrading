@@ -1,0 +1,321 @@
+2022-05-29 10:51:51.288 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 2252 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 10:51:51.293 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 10:51:51.620 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 10:51:51.628 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 10:51:51.930 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 10:51:52.249 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 932 ms
+2022-05-29 10:51:52.544 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 10:51:52.570 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 10:51:52.682 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 10:51:52.746 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 10:51:52.848 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 10:51:52.854 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 10:51:52.879 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 10:51:53.074 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 10:51:53.080 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.006 seconds (JVM running for 2.929)
+2022-05-29 10:51:58.066 - INFO  [p-nio-80-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 10:51:58.066 - INFO  [p-nio-80-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 10:53:39.661 - INFO  [on(5)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 10:53:39.681 - INFO  [on(5)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:00:12.695 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 18964 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:00:12.699 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:00:12.996 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:00:13.004 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:00:13.280 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:00:13.486 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2022-05-29 11:00:13.765 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:00:13.808 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:00:13.989 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:00:14.059 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:00:14.188 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:00:14.193 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:00:14.219 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:00:14.400 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:00:14.405 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.906 seconds (JVM running for 2.732)
+2022-05-29 11:00:37.312 - INFO  [p-nio-80-exec-3] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:00:37.312 - INFO  [p-nio-80-exec-3] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 11:00:52.195 - INFO  [on(4)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:00:52.221 - INFO  [on(4)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:01:31.334 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 6192 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:01:31.338 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:01:31.686 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:01:31.696 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:01:31.984 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:01:32.174 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 812 ms
+2022-05-29 11:01:32.442 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:01:32.467 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:01:32.565 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:01:32.639 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:01:32.732 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:01:32.737 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:01:32.762 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:01:32.943 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:01:32.948 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.812 seconds (JVM running for 2.652)
+2022-05-29 11:01:36.349 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:01:36.350 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 11:02:16.322 - INFO  [on(4)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:02:16.340 - INFO  [on(4)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:02:40.874 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 19288 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:02:40.879 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:02:41.248 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:02:41.259 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:02:41.572 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:02:41.861 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 956 ms
+2022-05-29 11:02:42.140 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:02:42.165 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:02:42.268 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:02:42.333 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:02:42.424 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:02:42.429 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:02:42.456 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:02:42.637 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:02:42.642 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.99 seconds (JVM running for 2.846)
+2022-05-29 11:02:48.462 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:02:48.463 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 1 ms
+2022-05-29 11:04:37.002 - INFO  [on(5)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:04:37.026 - INFO  [on(5)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:06:16.782 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 3832 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:06:16.786 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:06:17.083 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:06:17.090 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:06:17.349 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:06:17.533 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 714 ms
+2022-05-29 11:06:17.801 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:06:17.825 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:06:17.925 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:06:17.998 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:06:18.092 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:06:18.098 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:06:18.128 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:06:18.349 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:06:18.354 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.784 seconds (JVM running for 2.661)
+2022-05-29 11:06:23.322 - INFO  [p-nio-80-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:06:23.323 - INFO  [p-nio-80-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 11:07:18.350 - INFO  [on(3)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:07:18.387 - INFO  [on(3)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:07:40.007 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 2588 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:07:40.011 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:07:40.322 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:07:40.331 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:07:40.601 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:07:40.834 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 793 ms
+2022-05-29 11:07:41.097 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:07:41.121 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:07:41.209 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:07:41.288 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:07:41.378 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:07:41.383 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:07:41.408 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:07:41.586 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:07:41.591 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.779 seconds (JVM running for 2.635)
+2022-05-29 11:07:44.866 - INFO  [p-nio-80-exec-6] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:07:44.867 - INFO  [p-nio-80-exec-6] o.s.w.s.FrameworkServlet       : Completed initialization in 1 ms
+2022-05-29 11:07:52.058 - INFO  [on(2)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:07:52.090 - INFO  [on(2)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:09:31.620 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 2544 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:09:31.632 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:09:31.993 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:09:32.008 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:09:32.332 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:09:32.669 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1007 ms
+2022-05-29 11:09:33.012 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:09:33.043 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:09:33.169 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:09:33.247 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:09:33.369 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:09:33.377 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:09:33.407 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:09:33.631 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:09:33.638 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.287 seconds (JVM running for 3.348)
+2022-05-29 11:09:36.099 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:09:36.100 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 1 ms
+2022-05-29 11:09:56.494 - INFO  [on(2)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:09:56.512 - INFO  [on(2)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:13:59.341 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 8556 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:13:59.348 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:13:59.658 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:13:59.666 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:13:59.979 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:14:00.178 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 805 ms
+2022-05-29 11:14:00.475 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:14:00.518 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:14:00.676 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:14:00.752 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:14:00.884 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:14:00.891 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:14:00.955 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:14:01.160 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:14:01.165 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.032 seconds (JVM running for 2.912)
+2022-05-29 11:14:01.227 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:14:01.228 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 11:14:11.648 - INFO  [on(2)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:14:11.664 - INFO  [on(2)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:14:26.582 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 16308 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:14:26.590 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:14:26.882 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:14:26.894 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:14:27.170 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:14:27.363 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2022-05-29 11:14:27.632 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:14:27.658 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:14:27.774 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:14:27.843 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:14:27.933 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:14:27.938 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:14:27.967 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:14:28.145 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:14:28.150 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.758 seconds (JVM running for 2.657)
+2022-05-29 11:14:50.490 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:14:50.491 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 11:15:16.062 - INFO  [on(4)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:15:16.086 - INFO  [on(4)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:15:22.188 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 14856 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:15:22.199 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:15:22.512 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:15:22.520 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:15:22.779 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2022-05-29 11:15:23.007 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 781 ms
+2022-05-29 11:15:23.284 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:15:23.308 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:15:23.408 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:15:23.482 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:15:23.574 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:15:23.579 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:15:23.605 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:15:23.786 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-29 11:15:23.791 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.826 seconds (JVM running for 2.68)
+2022-05-29 11:15:33.301 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:15:33.301 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 11:15:46.318 - INFO  [on(2)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:15:46.352 - INFO  [on(2)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:16:07.911 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 15548 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:16:07.915 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:16:08.224 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:16:08.233 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:16:08.520 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2022-05-29 11:16:08.716 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+2022-05-29 11:16:08.996 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:16:09.022 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:16:09.128 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:16:09.196 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:16:09.287 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:16:09.293 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:16:09.323 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:16:09.506 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-29 11:16:09.511 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 1.821 seconds (JVM running for 2.716)
+2022-05-29 11:16:17.160 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:16:17.161 - INFO  [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 1 ms
+2022-05-29 11:16:38.795 - INFO  [on(4)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:16:38.814 - INFO  [on(4)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:20:35.033 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 3384 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 11:20:35.041 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 11:20:35.396 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 11:20:35.406 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 11:20:35.736 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 11:20:35.990 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+2022-05-29 11:20:36.339 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 11:20:36.375 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 11:20:36.527 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 11:20:36.599 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 11:20:36.727 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 11:20:36.736 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 11:20:36.769 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 11:20:37.014 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 11:20:37.020 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.218 seconds (JVM running for 3.328)
+2022-05-29 11:20:49.701 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 11:20:49.701 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 11:20:55.374 - INFO  [on(2)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 11:20:55.395 - INFO  [on(2)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:16:44.951 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 13576 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 16:16:44.958 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 16:16:45.483 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 16:16:45.498 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-05-29 16:16:46.008 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 16:16:46.393 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1400 ms
+2022-05-29 16:16:46.763 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 16:16:46.821 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 16:16:47.018 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 16:16:47.114 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 16:16:47.268 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 16:16:47.275 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:16:47.306 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 16:16:47.559 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 16:16:47.566 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.898 seconds (JVM running for 4.201)
+2022-05-29 16:17:41.635 - INFO  [on(5)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 16:17:41.665 - INFO  [on(5)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:20:55.458 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 7524 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 16:20:55.464 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 16:20:55.838 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 16:20:55.849 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 16:20:56.183 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 16:20:56.520 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1029 ms
+2022-05-29 16:20:56.852 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 16:20:56.896 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 16:20:57.070 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 16:20:57.161 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 16:20:57.282 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 16:20:57.287 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:20:57.317 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 16:20:57.521 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 16:20:57.527 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.321 seconds (JVM running for 3.644)
+2022-05-29 16:21:07.974 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 16:21:07.975 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 1 ms
+2022-05-29 16:21:20.886 - INFO  [on(2)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 16:21:20.920 - INFO  [on(2)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:22:03.809 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 15116 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 16:22:03.814 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-05-29 16:22:04.224 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 16:22:04.236 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-05-29 16:22:04.610 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 16:22:05.539 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
+2022-05-29 16:22:05.941 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 16:22:05.989 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 16:22:06.172 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 16:22:06.257 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 16:22:06.399 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 16:22:06.410 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:22:06.453 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 16:22:06.692 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 16:22:06.699 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 3.15 seconds (JVM running for 4.917)
+2022-05-29 16:22:09.654 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 16:22:09.658 - INFO  [p-nio-80-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 1 ms
+2022-05-29 16:22:39.554 - INFO  [on(4)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 16:22:39.607 - INFO  [on(4)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:24:26.775 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 15656 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 16:24:26.787 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 16:24:27.166 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 16:24:27.180 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-05-29 16:24:27.502 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 16:24:27.876 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1061 ms
+2022-05-29 16:24:28.198 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 16:24:28.227 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 16:24:28.370 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 16:24:28.436 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 16:24:28.544 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 16:24:28.552 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:24:28.581 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 16:24:28.787 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 16:24:28.794 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.27 seconds (JVM running for 3.513)
+2022-05-29 16:24:36.958 - INFO  [p-nio-80-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 16:24:36.959 - INFO  [p-nio-80-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 1 ms
+2022-05-29 16:24:43.012 - INFO  [on(2)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 16:24:43.043 - INFO  [on(2)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:26:09.219 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting AutoTradingApplication using Java 18.0.1 on LAPTOP-KMLEESCF with PID 12896 (C:\Users\JL\eclipse-test-workspace\AutoTrading\target\classes started by JL in C:\Users\JL\eclipse-test-workspace\AutoTrading)
+2022-05-29 16:26:09.224 - INFO  [           main] o.s.b.SpringApplication        : The following 1 profile is active: "mysql"
+2022-05-29 16:26:09.627 - INFO  [           main] epositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-29 16:26:09.636 - INFO  [           main] epositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-05-29 16:26:10.018 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 80 (http)
+2022-05-29 16:26:10.503 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1247 ms
+2022-05-29 16:26:11.011 - INFO  [           main] o.h.j.i.u.LogHelper            : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-29 16:26:11.055 - INFO  [           main] o.h.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-29 16:26:11.210 - INFO  [           main] .a.c.r.j.JavaReflectionManager : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-29 16:26:11.277 - INFO  [           main] o.h.d.Dialect                  : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-05-29 16:26:11.386 - INFO  [           main] e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-29 16:26:11.392 - INFO  [           main] stractEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-29 16:26:11.422 - WARN  [           main] figuration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-29 16:26:11.736 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-29 16:26:11.742 - INFO  [           main] o.s.b.StartupInfoLogger        : Started AutoTradingApplication in 2.874 seconds (JVM running for 4.213)
+2022-05-29 16:26:16.797 - INFO  [p-nio-80-exec-3] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2022-05-29 16:26:16.798 - INFO  [p-nio-80-exec-3] o.s.w.s.FrameworkServlet       : Completed initialization in 0 ms
+2022-05-29 16:26:41.132 - INFO  [on(4)-127.0.0.1] gistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-29 16:26:41.176 - INFO  [on(4)-127.0.0.1] stractEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

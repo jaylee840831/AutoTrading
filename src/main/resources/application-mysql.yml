@@ -1,0 +1,11 @@
+spring: 
+  project: 
+    env: mysql
+  datasource: 
+    url: jdbc:mysql://localhost:3306/
+    username: root
+    password: jasper840831
+    driver-class-name: com.mysql.jdbc.Driver
+  
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect

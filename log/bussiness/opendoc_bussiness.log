@@ -1,0 +1,4 @@
+2022-05-29 10:51:58.210 - INFO  [p-nio-80-exec-2] c.e.d.c.ApiController          : trading info: AlertMessage [username=測試, tradingPlatform=BingX, message=比特幣低點買進] trading status: success
+2022-05-29 10:52:06.102 - INFO  [p-nio-80-exec-3] c.e.d.c.ApiController          : trading info: bad trading info request(trading platform not found) AlertMessage [username=測試, tradingPlatform=a, message=比特幣低點買進]
+2022-05-29 10:52:13.546 - INFO  [p-nio-80-exec-4] c.e.d.c.ApiController          : trading info: bad trading info request
+2022-05-29 10:52:45.856 - INFO  [p-nio-80-exec-6] c.e.d.c.ApiController          : trading info: bad trading info request(trading platform not found) AlertMessage [username=測試, tradingPlatform=bingx, message=比特幣低點買進]
