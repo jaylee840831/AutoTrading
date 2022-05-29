@@ -10,6 +10,7 @@
 	    align-items: center; 
 	}
 	#B2R{
+		height: 300px;
 	    display: flex;
 	    justify-content: center; 
 	    align-items: center; 
@@ -25,7 +26,7 @@
 		<h2>查詢使用者資訊</h2>
 	</div>
 	<div  class="container">
-		<form method="post" action="/main" οnsubmit="return isEmpty();">
+		<form method="post" action="/main">
 			<h3>api key</h3><br>
 			<input type="text" id="apiKey" name="apiKey" autocomplete="off"/>
 			<br>
@@ -42,28 +43,7 @@
 		</h3>
 	</div>
 	
-	<script th:inline="javascript">
-		function isEmpty(){  
-			var key1 = $("#apiKey").val()
-			var key2= $("#secretKey").val()
-			
-			alert(key1)
-			
-			if(key1.trim()=='' || key2.trim()==''){
-				alert('輸入不可有空值')
-				return false;
-			}
-			
-			return true;
-		}
-	
-		/*<![CDATA[*/
-		  var balance_info = /*[[${balanceInfo}]]*/ "Test";
-		/*]]>*/
-		
-		if(balance_info!='error UserInfo Message'){
-			
-		}
+	<script>
 	</script>
 </body>
 </html>
