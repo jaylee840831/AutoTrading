@@ -1,10 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Auto Trading</title>
+<style type="text/css">
+	.container{
+	    display: flex;
+	    justify-content: center; 
+	    align-items: center; 
+	}
+	#B2R{
+	    display: flex;
+	    justify-content: center; 
+	    align-items: center; 
+		background: -webkit-linear-gradient(left top,yellow,red);
+		background: -o-linear-gradient(bottom right,yellow,red);
+		background: -moz-linear-gradient(bottom right,yellow,red);
+		background: linear-gradient(to bottom right,yellow,red);
+	}
+</style>
 </head>
 <body>
-hihi
+	<div  class="container">
+		<h2>查詢使用者資訊</h2>
+	</div>
+	<div  class="container">
+		<form method="post" action="/main" οnsubmit="return isEmpty();">
+			<h3>api key</h3><br>
+			<input type="text" id="apiKey" name="apiKey" autocomplete="off"/>
+			<br>
+			<h3>secret key</h3><br>
+			<input type="text" id="secretKey" name="secretKey" autocomplete="off"/>
+			<p>
+			<input type="submit"  value="確認"/>
+		</form>
+	</div>
+	<p>
+	<div id="B2R">
+		<h3>
+			<span th:text=${balanceInfo}></span>
+		</h3>
+	</div>
+	
+	<script th:inline="javascript">
+		function isEmpty(){  
+			var key1 = $("#apiKey").val()
+			var key2= $("#secretKey").val()
+			
+			alert(key1)
+			
+			if(key1.trim()=='' || key2.trim()==''){
+				alert('輸入不可有空值')
+				return false;
+			}
+			
+			return true;
+		}
+	
+		/*<![CDATA[*/
+		  var balance_info = /*[[${balanceInfo}]]*/ "Test";
+		/*]]>*/
+		
+		if(balance_info!='error UserInfo Message'){
+			
+		}
+	</script>
 </body>
 </html>

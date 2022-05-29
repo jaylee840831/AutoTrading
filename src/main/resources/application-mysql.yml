@@ -9,3 +9,11 @@ spring:
   
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
+    
+
+  thymeleaf: 
+    cache: false
+    prefix: classpath:/templates/    # 設定去templates資料夾找html檔案
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
