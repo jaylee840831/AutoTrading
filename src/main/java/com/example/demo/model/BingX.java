@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-public class UserInfo {
+public class BingX {
 //	private String username;
 	private String apiKey;
 	private String secretKey;

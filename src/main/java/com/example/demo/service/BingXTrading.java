@@ -6,7 +6,7 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.model.UserInfo;
+import com.example.demo.model.BingX;
 import com.example.demo.utils.LogUtils;
 import com.example.demo.utils.TradingStatusUtils;
 
@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 @Service
-public class AutoTrading {
+public class BingXTrading {
 	private static final String url = "https://api-swap-rest.bingbon.pro";
 	private String apiKey = "";
 	private String secretKey="";
@@ -109,13 +109,13 @@ public class AutoTrading {
             }
 
         } catch (Exception e) {
-        	exceptionLog.info("post exception: {}",e);
+        	exceptionLog.info("post exception: {}",e.toString());
         }
     	
     	return result;
     }
     
-    void initUserInfo(UserInfo userInfo) {
+    void initUserInfo(BingX userInfo) {
     	this.apiKey=userInfo.getApiKey();
     	this.secretKey=userInfo.getSecretKey();
     }
