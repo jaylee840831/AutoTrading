@@ -4,11 +4,9 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.logging.log4j.Logger;
-import org.springframework.stereotype.Service;
 
 import com.example.demo.model.BingX;
 import com.example.demo.utils.LogUtils;
-import com.example.demo.utils.TradingStatusUtils;
 
 import net.bytebuddy.asm.Advice.This;
 
@@ -26,7 +24,6 @@ import java.util.Base64.Encoder;
 import java.util.Map;
 import java.util.TreeMap;
 
-@Service
 public class BingXTrading {
 	private static final String url = "https://api-swap-rest.bingbon.pro";
 	private String apiKey = "";
@@ -119,6 +116,10 @@ public class BingXTrading {
     	this.apiKey=userInfo.getApiKey();
     	this.secretKey=userInfo.getSecretKey();
     }
+    
+    void initTradingInfo(String apiKey) {
+    	this.apiKey=apiKey;
+    }
 
     String getBalance() {
     	String method = "POST";
@@ -161,28 +162,30 @@ public class BingXTrading {
         post(requestUrl);
     }
 
-    void placeOrder(String symbol, String side, String price, String volume,
+    boolean placeOrder(String symbol, String side, String price, String volume,
     		String tradeType, String action) {
-    	String method = "POST";
-    	String path = "/api/v1/user/trade";
-    	String timestamp = ""+new Timestamp(System.currentTimeMillis()).getTime();
-
-    	TreeMap<String, String> parameters = new TreeMap<String, String>();
-    	parameters.put("symbol", symbol);
-    	parameters.put("apiKey", apiKey);
-    	parameters.put("side", side);
-    	parameters.put("entrustPrice", price);
-    	parameters.put("entrustVolume", volume);
-    	parameters.put("tradeType", tradeType);
-    	parameters.put("action", action);
-    	parameters.put("timestamp", timestamp);
-
-    	String valueToDigest = getMessageToDigest(method, path, parameters);
-        String messageDigest = generateHmac256(valueToDigest);
-        parameters.put("sign", messageDigest);
-        String requestUrl = getRequestUrl(path, parameters);
-
-        post(requestUrl);
+//    	String method = "POST";
+//    	String path = "/api/v1/user/trade";
+//    	String timestamp = ""+new Timestamp(System.currentTimeMillis()).getTime();
+//
+//    	TreeMap<String, String> parameters = new TreeMap<String, String>();
+//    	parameters.put("symbol", symbol);
+//    	parameters.put("apiKey", apiKey);
+//    	parameters.put("side", side);
+//    	parameters.put("entrustPrice", price);
+//    	parameters.put("entrustVolume", volume);
+//    	parameters.put("tradeType", tradeType);
+//    	parameters.put("action", action);
+//    	parameters.put("timestamp", timestamp);
+//
+//    	String valueToDigest = getMessageToDigest(method, path, parameters);
+//        String messageDigest = generateHmac256(valueToDigest);
+//        parameters.put("sign", messageDigest);
+//        String requestUrl = getRequestUrl(path, parameters);
+//
+//        post(requestUrl);
+        
+        return true;
     }
 
 //    public static void main(String[] args) {

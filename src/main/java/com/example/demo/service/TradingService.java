@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.model.BingX;
-import com.example.demo.utils.TradingStatusUtils;
+import com.example.demo.model.DAO.BingXMessageDAO;
 
 
 /*
@@ -13,20 +13,38 @@ import com.example.demo.utils.TradingStatusUtils;
 
 @Service
 public class TradingService {
-	
-	@Autowired
-	BingXTrading bingXTrading;
 
-	//自動交易
-	public String autoTrading(String tradingPlatform) {
-		return TradingStatusUtils.getSuccess();
+	//BingX平台交易
+	public boolean BingXTrading(BingXMessageDAO message) {
+		BingXTrading bingXTrading=new BingXTrading();
+		if(checkEmpty(message)==true || message.getApiKey().equals("")) {
+			return false;
+		}
+
+		bingXTrading.initTradingInfo(message.getApiKey());
+		
+		return bingXTrading.placeOrder(message.getSymbol(), message.getSide(), 
+				String.valueOf(message.getEntrustPrice()), String.valueOf(message.getEntrustVolume()), 
+				message.getTradeType(), message.getAction());
 	}
 	
-	//查詢餘額 USDT
-	public String balance(BingX userInfo) {
+	//BingX平台查詢用戶資訊
+	public String BingXBalance(BingX userInfo) {
+		BingXTrading bingXTrading=new BingXTrading();
 		bingXTrading.initUserInfo(userInfo);
 		String result= bingXTrading.getBalance();
 		
 		return result;
+	}
+	
+	public boolean checkEmpty(BingXMessageDAO message) {
+		if(message.getUserid().equals("") || message.getTradingPlatform().equals("") || message.getSymbol().equals("") || 
+				message.getApiKey().equals("") || message.getTimestamp().equals("") || message.getSide().equals("") ||
+				message.getEntrustPrice()==null || message.getEntrustVolume()==null || message.getTradeType().equals("") ||
+				message.getAction().equals("")) {
+			return true;
+		}
+		
+		return false;
 	}
 }

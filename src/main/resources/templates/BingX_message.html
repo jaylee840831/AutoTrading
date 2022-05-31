@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>Auto Trading</title>
+<title>Alert Message</title>
 <style type="text/css">
 	body {
-	  background-image: url("img/trading.jpg");
+	  background-image: url("img/trading2.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
@@ -14,24 +14,16 @@
 	h4,h5{
 		color:white;
 	}
+	h6{
+		color:yellow;
+	}
 	.container{
 		margin:50px;
 	    display: flex;
 	    justify-content: center; 
 	    align-items: center; 
 	}
-	#B2R{
-		width:400px;
-		height: 300px;
-	    display: flex;
-	    justify-content: center; 
-	    align-items: center; 
-		background: -webkit-linear-gradient(left top,yellow,red);
-		background: -o-linear-gradient(bottom right,yellow,red);
-		background: -moz-linear-gradient(bottom right,yellow,red);
-		background: linear-gradient(to bottom right,yellow,red);
-	}
-	/* Popup container - can be anything you want */
+		/* Popup container - can be anything you want */
 .popup {
   position: relative;
   display: inline-block;
@@ -45,7 +37,7 @@
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  width: 400px;
+  width: 450px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -98,62 +90,41 @@
 		    <div class="col-4">'
 		    </div>
 		    <div class="col-4">
-		      <button class="btn btn-warning">自動交易</button>
+		      <button class="btn btn-warning" onclick="window.location.href='/BingX'">BingX使用者資訊</button>
 		    </div>
 	  	</div>
 	</div>
 	<div  class="container">
-		<h4>BingX交易平台使用者資訊查詢</h4>
+		<h4>TradingView快訊歷史紀錄查詢</h4>
 	</div>
 	<div  class="container">
-		<form method="post" action="/main">
+		<h6>注意!!只有TradingView的Pro、Pro+和Premium用戶設定的快訊才能使用本網站的自動交易功能</h6>
+	</div>
+	<div  class="container">
+		<form method="post" action="/BingX_message">
 			<div class="form-group">
-				<h5>API Key</h5><br>
-				<input type="text" id="apiKey" name="apiKey" autocomplete="off"/>
-			</div>
-			<div class="form-group">
-				<h5>Secret Key</h5><br>
-				<input type="text" id="secretKey" name="secretKey" autocomplete="off"/>
+				<h5>BingX User ID</h5><br>
+				<input type="text" id="userID" name="userID" autocomplete="off"/>
 			</div>
 			<div class="form-group">
 				<input type="submit" class="btn-warning btn"  value="確認"/>
 			</div>
 			<p>
-			<div class="form-group popup" onclick="setting_key()" style="float:right;color:red;">如何設定Key?
+			<div class="form-group popup" onclick="setting_key()" style="float:right;color:yellow;">何謂TradingView快訊?
 				 <span class="popuptext" id="myPopup" style="display:inline-block;">
-				 	在對任何請求進行簽名之前，您必須通過 BingX 網站【用戶中心】-【API管理(專業合約)】創建一個API key。 創建key後，您將獲得2個必須記住的信息：
-				 	<br>
-					API Key
-					<br>
-					Secret Key
-					<br>
-					API Key 和 Secret Key將由隨機生成和提供。
+				 	當市場滿足您的自訂條件時，TradingView快訊會立即通知。<br>
+				 	例如，“如果蘋果股價向上穿越150美元，請通知我”。<br>
+				 	所有用戶都有可視的彈出視窗、聲音訊號、電郵快訊和電郵到簡訊(email-to-sms)快訊、<br>
+				 	以及發送到電話的推播通知。Pro、Pro+和Premium用戶還可以在觸發快訊時接收到webhook通知。
 				 </span>
 			</div>
 		</form>
 	</div>
-	<p>
-	<div class="container">
-		<div class="col-11">
-			<h5>
-				<span id="info_area" th:text=${balanceInfo}></span>
-			</h5>
-		</div>
-		<div class="col-1">
-			<h6>
-			<a href="javascript:clear_info();" style="color:yellow;font-size:18px;">清空</a>
-			</h6>
-		</div>
-	</div>
-
 <script>
 	//When the user clicks on div, open the popup
-    function setting_key(){
-    	  var popup = document.getElementById("myPopup");
-    	  popup.classList.toggle("show");
-    }
-	function clear_info(){
-		$("#info_area").text('');
+	function setting_key(){
+		  var popup = document.getElementById("myPopup");
+		  popup.classList.toggle("show");
 	}
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

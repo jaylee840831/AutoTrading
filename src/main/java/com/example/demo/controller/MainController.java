@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.model.BingX;
@@ -23,12 +24,12 @@ public class MainController {
 	Logger bussinessLog=LogUtils.getBussinessLogger();
 	Logger exceptionLog=LogUtils.getExceptionLogger();
 
-	@GetMapping("/main")
-	public String main(Model model) {
-		return "main";
+	@GetMapping("/BingX")
+	public String mainView(Model model) {
+		return "BingX";
 	}
 	
-	@PostMapping(value="/main")
+	@PostMapping(value="/BingX")
 	public String getBingXBalance(BingX userInfo,Model model){
 		
 		if(userInfo.getApiKey().equals("") || userInfo.getSecretKey().equals("")) {
@@ -37,14 +38,19 @@ public class MainController {
 		}
 		else {
 			//取得用戶餘額資訊
-			String result= tradingService.balance(userInfo);
-			model.addAttribute("balanceInfo", resultFormat(result).toString());
+			String result= tradingService.BingXBalance(userInfo);
+			model.addAttribute("balanceInfo", BingXResultFormat(result).toString());
 		}
 		
-		return "main";
+		return "BingX";
 	}
 	
-	public StringBuilder resultFormat(String result) {
+	@GetMapping(value="/BingX_message")
+	public String messageView() {
+		return "/BingX_message";
+	}
+	
+	public StringBuilder BingXResultFormat(String result) {
 		
 		StringBuilder result2 = new StringBuilder();
 		
