@@ -1,8 +1,5 @@
 package com.example.demo.controller;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.ErrorMessage;
-import com.example.demo.model.DAO.BingXMessageDAO;
+import com.example.demo.model.DTO.BingXMessageDTO;
 import com.example.demo.service.TradingService;
 import com.example.demo.utils.BingXUtils;
 import com.example.demo.utils.LogUtils;
@@ -32,94 +29,66 @@ public class ApiController {
 	
 	Logger bussinessLog=LogUtils.getBussinessLogger();
 
+	// 接收tradingview的webhook url發送的交易訊息，再經由指定的平台交易
 	@PostMapping(value="/webhook/{platform}")
 	public void getTradingViewAlertMessage(@RequestBody String m,@PathVariable("platform")String platform){
 		
-		Map<String, Object> result =null;
 		JSONObject message = new JSONObject(m);
 		
-//		if(message.length()==0) {
-//			bussinessLog.info("trading info: {} trading status: {}",message,TradingStatusUtils.getFail());
-//			result = new HashMap<String, Object>()
-//				{
-//					private static final long serialVersionUID = 1L;
-//
-//					{
-//				        put(platform,errorMessage("bad request,please check tradingview's alert message setting"));
-//				    }
-//				};
-//				bussinessLog.info("trading info: {} trading status: {}",result,TradingStatusUtils.getFail());
-//		}
-		
-		// 自動化交易
+		// 以BingX交易
 		if(platform.equals(TradingPlatformUtils.getBingX())) {
-			BingXMessageDAO bingXMessageDAO=new BingXMessageDAO();
-			bingXMessageDAO.setTradingPlatform(platform);
+			BingXMessageDTO bingXMessageDTO=new BingXMessageDTO();
+			bingXMessageDTO.setTradingPlatform(platform);
 			
 		    message.keySet().forEach(keyStr ->
 		    {
 				if(keyStr.equals(BingXUtils.getUserId())) {
-					bingXMessageDAO.setUserid(message.get(keyStr).toString());
+					bingXMessageDTO.setUserid(message.get(keyStr).toString());
 				}
 				else if(keyStr.equals(BingXUtils.getMessage())) {
 					
 		    		JSONObject messageObject =(JSONObject) message.get(keyStr);
 		    		for (String key : messageObject.keySet()) {
 		    			if(key.equals(BingXUtils.getSymbol())) {
-		    				bingXMessageDAO.setSymbol(messageObject.get(key).toString());
+		    				bingXMessageDTO.setSymbol(messageObject.get(key).toString());
 		    			}
 		    			else if(key.equals(BingXUtils.getApiKey())) {
-		    				bingXMessageDAO.setApiKey(messageObject.get(key).toString());
+		    				bingXMessageDTO.setApiKey(messageObject.get(key).toString());
 		    			}
-		    			else if(key.equals(BingXUtils.getTimestamp())) {
-		    				bingXMessageDAO.setTimestamp(messageObject.get(key).toString());
+		    			else if(key.equals(BingXUtils.getSecretKey())) {
+		    				bingXMessageDTO.setSecretKey(messageObject.get(key).toString());
 		    			}
 		    			else if(key.equals(BingXUtils.getSide())) {
-		    				bingXMessageDAO.setSide(messageObject.get(key).toString());
+		    				bingXMessageDTO.setSide(messageObject.get(key).toString());
 		    			}
 		    			else if(key.equals(BingXUtils.getEntrustPrice())) {
-		    				bingXMessageDAO.setEntrustPrice(Float.valueOf(messageObject.get(key).toString()));
+		    				bingXMessageDTO.setEntrustPrice(Float.valueOf(messageObject.get(key).toString()));
 		    			}
 		    			else if(key.equals(BingXUtils.getEntrustVolume())) {
-		    				bingXMessageDAO.setEntrustVolume(Float.valueOf(messageObject.get(key).toString()));
+		    				bingXMessageDTO.setEntrustVolume(Float.valueOf(messageObject.get(key).toString()));
 		    			}
 		    			else if(key.equals(BingXUtils.getTradeType())) {
-		    				bingXMessageDAO.setTradeType(messageObject.get(key).toString());
+		    				bingXMessageDTO.setTradeType(messageObject.get(key).toString());
 		    			}
 		    			else if(key.equals(BingXUtils.getAction())) {
-		    				bingXMessageDAO.setAction(messageObject.get(key).toString());
+		    				bingXMessageDTO.setAction(messageObject.get(key).toString());
 		    			}
 		    		}			    		
 				}
 		    	
 		    });
 		    
-			boolean tradingStatus= tradingService.BingXTrading(bingXMessageDAO);
+			boolean tradingStatus= tradingService.BingXTrading(bingXMessageDTO);
+			
 			if(tradingStatus==false) {
-				result = new HashMap<String, Object>()
-				{
-					private static final long serialVersionUID = 1L;
-
-					{
-				        put("user id "+bingXMessageDAO.getUserid(),errorMessage("交易資料可能存在空值或是不正確導致交易失敗"));
-				    }
-				};
-				bussinessLog.info("trading info: {} trading status: Fail",result);
+				bussinessLog.info("trading info: {} trading status: Fail",bingXMessageDTO.toString());
 			}
 			else {
-				bussinessLog.info("trading info: {} trading status: Success",bingXMessageDAO);
+				bussinessLog.info("trading info: {} trading status: Success",bingXMessageDTO.toString());
 			}
 		}
 		else {
-			result = new HashMap<String, Object>()
-			{
-				private static final long serialVersionUID = 1L;
-
-				{
-			        put("platform "+platform,errorMessage("bad request,please check your URL"));
-			    }
-			};
-			bussinessLog.info("trading info: {} trading status: Fail",result);
+			bussinessLog.info("trading info: {} trading status: Fail",errorMessage("bad request,please check your URL"));
 		}
 	}
 	

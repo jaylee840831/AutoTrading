@@ -17,8 +17,8 @@ public class BingXUtils {
 	public static String getApiKey() {
 		return BingXEnum.APIKEY.getInfo();
 	}
-	public static String getTimestamp() {
-		return BingXEnum.TIME.getInfo();
+	public static String getSecretKey() {
+		return BingXEnum.SECRETKEY.getInfo();
 	}
 	public static String getSide() {
 		return BingXEnum.SIDE.getInfo();

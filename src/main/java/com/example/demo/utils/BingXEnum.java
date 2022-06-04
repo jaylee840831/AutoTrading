@@ -1,7 +1,7 @@
 package com.example.demo.utils;
 
 public enum BingXEnum {
-	USERID("userid"),PLATFORM("tradingPlatform"),MESSAGE("message"),SYMBOL("symbol"),APIKEY("apiKey"),TIME("timestamp"),
+	USERID("userid"),PLATFORM("tradingPlatform"),MESSAGE("message"),SYMBOL("symbol"),APIKEY("apiKey"),SECRETKEY("secretKey"),
 	SIDE("side"),PRICE("entrustPrice"),VOLUME("entrustVolume"),TRADETYPE("tradeType"),ACTION("action");
 
 	private String info;

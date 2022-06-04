@@ -14,12 +14,6 @@
 	h4,h5{
 		color:white;
 	}
-	.container{
-		margin:50px;
-	    display: flex;
-	    justify-content: center; 
-	    align-items: center; 
-	}
 	#B2R{
 		width:400px;
 		height: 300px;
@@ -31,62 +25,6 @@
 		background: -moz-linear-gradient(bottom right,yellow,red);
 		background: linear-gradient(to bottom right,yellow,red);
 	}
-	/* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 400px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 </style>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -95,66 +33,35 @@
 		<div class="row">
 		    <div class="col-4">
 		    </div>
-		    <div class="col-4">'
+		    <div class="col-4">
+		    	<button class="btn btn-warning" onclick="window.location.href='/login'">登入</button>
 		    </div>
 		    <div class="col-4">
-		      <button class="btn btn-warning" onclick="window.location.href='/BingX_message'">TV快訊</button>
+		      <button class="btn btn-warning" onclick="window.location.href='/BingX_message'">TV快訊交易紀錄</button>
 		    </div>
 	  	</div>
 	</div>
 	<div  class="container">
-		<h4>BingX交易平台使用者資訊查詢</h4>
-	</div>
-	<div  class="container">
-		<form method="post" action="/BingX">
-			<div class="form-group">
-				<h5>API Key</h5><br>
-				<input type="text" id="apiKey" name="apiKey" autocomplete="off"/>
+			<div class="row">
+				<div class="col-4">
+		    	</div>
+				<div class="col-4">
+					<h4>BingX使用者資訊</h4>
+		    	</div>
+		    	<div class="col-4">
+		    	</div>
 			</div>
-			<div class="form-group">
-				<h5>Secret Key</h5><br>
-				<input type="text" id="secretKey" name="secretKey" autocomplete="off"/>
+			<div class="row">
+				<div class="col-12">
+				</div>
 			</div>
-			<div class="form-group">
-				<input type="submit" class="btn-warning btn"  value="確認"/>
-			</div>
-			<p>
-			<div class="form-group popup" onclick="setting_key()" style="float:right;color:yellow;">如何設定Key?
-				 <span class="popuptext" id="myPopup" style="display:inline-block;">
-				 	在對任何請求進行簽名之前，您必須通過 BingX 網站【用戶中心】-【API管理(專業合約)】創建一個API key。 創建key後，您將獲得2個必須記住的信息：
-				 	<br>
-					API Key
-					<br>
-					Secret Key
-					<br>
-					API Key 和 Secret Key將由隨機生成和提供。
-				 </span>
-			</div>
-		</form>
-	</div>
-	<p>
-	<div class="container">
-		<div class="col-11">
-			<h5>
-				<span id="info_area" th:text=${balanceInfo}></span>
-			</h5>
-		</div>
-		<div class="col-1">
-			<h6>
-			<a href="javascript:clear_info();" style="color:yellow;font-size:18px;">清空</a>
-			</h6>
-		</div>
 	</div>
 
-<script>
-	//When the user clicks on div, open the popup
-    function setting_key(){
-    	  var popup = document.getElementById("myPopup");
-    	  popup.classList.toggle("show");
-    }
-	function clear_info(){
-		$("#info_area").text('');
-	}
+<script th:inline="javascript">
+
+	var a=[[${balanceInfo}]]
+	console.log(a)
+	
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
