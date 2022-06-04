@@ -143,12 +143,8 @@ public class BingXTrading {
         String messageDigest = generateHmac256(valueToDigest);
         parameters.put("sign", messageDigest);
         String requestUrl = getRequestUrl(path, parameters);
-
-        String result=post(requestUrl);
         
-        bussinessLog.info("balance info: {}",result);
-        
-        return result;
+        return post(requestUrl);
     }
 
     void getPositions(String symbol) {

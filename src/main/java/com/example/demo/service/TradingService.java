@@ -28,9 +28,7 @@ public class TradingService {
 	//BingX平台查詢用戶資訊
 	public String BingXBalance(BingXUserDAO userInfo) {
 		BingXTrading bingXTrading=new BingXTrading(userInfo);
-		String result= bingXTrading.getBalance();
-		
-		return result;
+		return bingXTrading.getBalance();
 	}
 	
 	public boolean checkEmpty(BingXMessageDTO message) {
