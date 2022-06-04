@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
 import com.example.demo.service.TradingService;
 import com.example.demo.service.UserService;
 import com.example.demo.utils.LogUtils;
@@ -50,24 +51,24 @@ public class MainController {
 			username=userDetails.getUsername();
 		}
 		
-		Map<String,String> resultMap=new TreeMap<String, String>();
+		Map<String, String>result=new TreeMap<String, String>();
 		
 		if(username!=null || !username.equals("")) {
 			try {
 				//取得用戶餘額資訊
-				String result= tradingService.BingXBalance(userService.getUserInfo(username));
-				model.addAttribute("balanceInfo", BingXResultToMap(result,resultMap));
-				bussinessLog.info("balance info: {}",BingXResultToMap(result,resultMap));
+				String response= tradingService.BingXBalance(userService.getUserInfo(username));
+				model.addAttribute("balanceInfo", BingXResultToMap(response,result));
+				bussinessLog.info("balance info: {}",BingXResultToMap(response,result));
 			} catch (Exception e) {
 				bussinessLog.info("balance info: bad request ,{}",e);
-				resultMap.put("error", e.toString());
-				model.addAttribute("balanceInfo", resultMap);
+				result.put("error", e.toString());
+				model.addAttribute("balanceInfo", result);
 			}
 		}
 		else {
 			bussinessLog.info("balance info: bad request");
-			resultMap.put("error", "Get User Information Error");
-			model.addAttribute("balanceInfo", resultMap);
+			result.put("error", "Get User Information Error");
+			model.addAttribute("balanceInfo", result);
 		}
 		
 		return "BingX";
@@ -95,7 +96,7 @@ public class MainController {
 	}
 	
 	//解析BingX回傳的使用者資訊，並整合成map
-	public Map<String,String> BingXResultToMap(String result,Map<String, String> result2) {
+	public Map<String, String> BingXResultToMap(String result,Map<String, String>result2) {
 		
 		try {
 			JSONObject jsonObject=new JSONObject(result);

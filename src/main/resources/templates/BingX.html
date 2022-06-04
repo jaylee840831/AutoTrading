@@ -11,13 +11,10 @@
       background-position: center;
       background-size: cover;
 	}
-	h4,h5{
+	h3,h4,h5{
 		color:white;
 	}
-	#B2R{
-		width:400px;
-		height: 300px;
-	    display: flex;
+	.B2R{
 	    justify-content: center; 
 	    align-items: center; 
 		background: -webkit-linear-gradient(left top,yellow,red);
@@ -26,6 +23,7 @@
 		background: linear-gradient(to bottom right,yellow,red);
 	}
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -46,22 +44,42 @@
 				<div class="col-4">
 		    	</div>
 				<div class="col-4">
-					<h4>BingX使用者資訊</h4>
+					<h3>BingX使用者資訊</h3>
 		    	</div>
 		    	<div class="col-4">
 		    	</div>
 			</div>
+			<p>
 			<div class="row">
-				<div class="col-12">
+				<div class="col-lg-4 col-md-3 col-sm-2">
+		    	</div>
+				<div class="col-lg-4 col-md-7 col-sm-8" >
+					<table id="balanceinfo_table" class="B2R" style="border:1px solid white;">
+					</table>
 				</div>
+				<div class="col-lg-4 col-md-2 col-sm-2">
+		    	</div>
 			</div>
 	</div>
 
-<script th:inline="javascript">
+<script th:inline="javascript" type="text/javascript">
 
-	var a=[[${balanceInfo}]]
-	console.log(a)
+var info_list= [[${balanceInfo}]]
+$('#balanceinfo_table').empty()
+
+if(info_list!=null){
+	var elements=""
 	
+	for(var k in info_list) {
+		var element="<tr>"+
+			"<th style='font-size:20px;'>"+k+"<th>"+
+			"<th style='font-size:20px;'>"+info_list[k]+"<th>"+
+		"</tr>"
+		elements+=element
+	}
+	
+	$('#balanceinfo_table').append(elements)
+}
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
