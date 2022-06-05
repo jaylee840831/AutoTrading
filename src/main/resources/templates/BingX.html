@@ -51,14 +51,10 @@
 			</div>
 			<p>
 			<div class="row">
-				<div class="col-lg-4 col-md-3 col-sm-2">
-		    	</div>
-				<div class="col-lg-4 col-md-7 col-sm-8" >
-					<table id="balanceinfo_table" class="B2R" style="border:1px solid white;">
+				<div class="col-12" >
+					<table id="balanceinfo_table" class="table table-dark table-hover">
 					</table>
 				</div>
-				<div class="col-lg-4 col-md-2 col-sm-2">
-		    	</div>
 			</div>
 	</div>
 
@@ -69,14 +65,17 @@ $('#balanceinfo_table').empty()
 
 if(info_list!=null){
 	var elements=""
+	elements+="<tbody>"
 	
 	for(var k in info_list) {
 		var element="<tr>"+
-			"<th style='font-size:20px;'>"+k+"<th>"+
-			"<th style='font-size:20px;'>"+info_list[k]+"<th>"+
+			"<td>"+k+"<td>"+
+			"<td>"+info_list[k]+"<td>"+
 		"</tr>"
 		elements+=element
 	}
+	
+	elements+="</tbody>"
 	
 	$('#balanceinfo_table').append(elements)
 }
